@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Football Game</title>
+    <script src="js/SAT.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div id = "container">
+
+
+    <div id ="startScreen">
+        <div id="title">FootBall</div>
+        <button id="play" onclick="init()">PLAY</button>
+        <br><br><br>
+        <img src="img/help.png" height="100" width="150" id="help">
+        <br>
+        <span id ="instructions">(Use left and right arrow keys to play)</span>
+    </div>
+
+    <div id ="gameOverScreen">
+        <div id="title">FootBall</div>
+        <button id="playagain" onclick="init()">PLAY AGAIN</button>
+        <br><br><br>
+    </div>
+
+
+    <canvas id="myCanvas" width="480" height="720"></canvas>
+    <div id="score">
+        <div id = "timer">
+            Time Left
+            <div id = "countdown">02:00</div>
+        </div>
+        <h3 id = "blue">France </h3>
+        <div id="away">0</div>
+        <h3 id = "red">Afghanistan</h3>
+        <div id="home">0</div>
+        <div id = "status"></div>
+        <div id = "credits"> Created By <br><a href = "" target="_blank">baheer safi</a></div>
+    </div>
+    
+</div>
+</body>
+<script src="js/football.js"></script>
+</html>
